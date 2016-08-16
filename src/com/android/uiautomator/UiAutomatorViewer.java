@@ -42,6 +42,7 @@ public class UiAutomatorViewer extends ApplicationWindow {
     public UiAutomatorViewer() {
         super(null);
     }
+    //单例模式
     public synchronized static UiAutomatorViewer getInstance(){
     	if(uViewerInstance==null){
     		uViewerInstance=new UiAutomatorViewer();
