@@ -93,7 +93,6 @@ public class OpenDialog extends Dialog {
         Button openScreenshotButton = new Button(openScreenshotGroup, SWT.NONE);
         openScreenshotButton.setText("...");
         openScreenshotButton.addListener(SWT.Selection, new Listener() {
-            @Override
             public void handleEvent(Event event) {
                 handleOpenScreenshotFile();
             }
@@ -117,7 +116,6 @@ public class OpenDialog extends Dialog {
         Button openXmlButton = new Button(openXmlGroup, SWT.NONE);
         openXmlButton.setText("...");
         openXmlButton.addListener(SWT.Selection, new Listener() {
-            @Override
             public void handleEvent(Event event) {
                 handleOpenXmlDumpFile();
             }

@@ -129,7 +129,6 @@ public class UiAutomatorModel {
     private static class MinAreaFindNodeListener implements IFindNodeListener {
         BasicTreeNode mNode = null;
 
-        @Override
         public void onFoundNode(BasicTreeNode node) {
             if (mNode == null) {
                 mNode = node;
