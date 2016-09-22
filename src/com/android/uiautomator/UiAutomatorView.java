@@ -174,6 +174,7 @@ public class UiAutomatorView extends Composite {
                 	Menu menu7=new Menu(menu);
                 	Menu menu8=new Menu(menu);
                 	Menu menu9=new Menu(menu);
+                	Menu menu10 = new Menu(menu); // exist
                 	
                 	//set items
                 	final MenuItem item1=new MenuItem(menu,SWT.CASCADE);
@@ -186,6 +187,9 @@ public class UiAutomatorView extends Composite {
                 	final MenuItem item8=new MenuItem(menu,SWT.CASCADE);
                 	final MenuItem item9=new MenuItem(menu,SWT.CASCADE);
                 	final MenuItem item43=new MenuItem(menu,SWT.CASCADE);
+                	final MenuItem item49=new MenuItem(menu,SWT.CASCADE);
+                	
+                	
                 	final MenuItem item10=new MenuItem(menu1,SWT.NONE);
                 	final MenuItem item11=new MenuItem(menu1,SWT.NONE);
                 	final MenuItem item12=new MenuItem(menu1,SWT.NONE);
@@ -220,6 +224,12 @@ public class UiAutomatorView extends Composite {
                 	final MenuItem item41=new MenuItem(menu8,SWT.NONE);
                 	final MenuItem item42=new MenuItem(menu8,SWT.NONE);
                 	final MenuItem item44=new MenuItem(menu6,SWT.NONE);
+                	final MenuItem item45=new MenuItem(menu10,SWT.NONE);
+                	final MenuItem item46=new MenuItem(menu10,SWT.NONE);
+                	final MenuItem item47=new MenuItem(menu10,SWT.NONE);
+                	final MenuItem item48=new MenuItem(menu10,SWT.NONE);
+                	
+                	
                 	//set item text
                 	item1.setText("Click");
                 	item2.setText("Click(Refresh)");
@@ -265,6 +275,12 @@ public class UiAutomatorView extends Composite {
                 	item41.setText("class");//Check
                 	item42.setText("xpath");//Check
                 	item44.setText("Other");
+                	item45.setText("id"); //Exist
+                	item46.setText("text");//Exist
+                	item47.setText("desc");//Exist
+                	item48.setText("class");//Exist
+                	item49.setText("Exist");//Exist
+                	
                 	//bind menu
                 	item1.setMenu(menu1);
                 	//item2.setMenu(menu2);
@@ -274,7 +290,8 @@ public class UiAutomatorView extends Composite {
                 	item6.setMenu(menu6);
                 	//item7.setMenu(menu7);
                 	item8.setMenu(menu8);
-                	//item9.setMenu(menu9);                	        
+                	//item9.setMenu(menu9);     
+                	item49.setMenu(menu10);
                 	
                 	
                 	
@@ -490,11 +507,9 @@ public class UiAutomatorView extends Composite {
 
 						@Override
 						public void widgetSelected(SelectionEvent arg0) {
-                			InputDialog dialog=new InputDialog(getShell(),"please input time(s)","please input",null,null);
+                			InputDialog dialog=new InputDialog(getShell(),"please input time(ms)","please input",null,null);
                 			if(dialog.open()==InputDialog.OK){
-                				//String script=getScriptByValue(item33.getText(),dialog.getValue());
-                				
-                				chargeText("sleep(2000);");
+                				chargeText("sleep(" + dialog.getValue() + ");");
                 			} 
 						}
                 		
@@ -522,6 +537,28 @@ public class UiAutomatorView extends Composite {
                 		}
                 	});
                 	
+                	
+                	//Exist
+                	item45.addSelectionListener(new SelectionAdapter() {
+
+						@Override
+						public void widgetSelected(SelectionEvent arg0) {
+							System.out.println("Id 添加侦听事件");
+                			String script=getScriptByAction(item45.getText(),item49.getText());
+                			chargeText(script);
+						}
+					});
+                	
+                	item46.addSelectionListener(new SelectionAdapter(){
+                		@Override
+                		public void widgetSelected(SelectionEvent e){
+                			System.out.println("Text 添加侦听事件");
+                			String script=getScriptByAction(item46.getText(),item49.getText());
+                			chargeText(script);
+                			//scriptTextarea.setText(script);               			
+                		}
+                	});
+                	
                 }
             }
             
@@ -543,6 +580,8 @@ public class UiAutomatorView extends Composite {
 				switch(id){
 					case "id":
 						res=getRes("resource-id");
+						res = res.substring(res.indexOf("/")+1); //截取 /之后的id
+						//System.out.println("Id: " + res.substring(res.indexOf("/")+1));
 						script+="Id(\""+res+"\")";
 						script=chargeAction(ac) + script + ";";
 						break;
@@ -567,7 +606,7 @@ public class UiAutomatorView extends Composite {
 						script+=chargeAction(ac);	
 						break;					
 				}
-				System.out.println("script: " + script);
+				System.out.println("getScriptByAction script: " + script);
 				return script;
 			}
 			
@@ -596,16 +635,17 @@ public class UiAutomatorView extends Composite {
 			
 			private String getScriptByValue(String id,String value) {
 				// TODO Auto-generated method stub
-				String script="driver";
+				String script="";
 				String res="";
 				switch(id){
 					case "id":
 						res=getRes("resource-id");
-						script+=".findElementById(\""+res+"\").sendKeys(\""+value+"\")";
+						res = res.substring(res.indexOf("/")+1);
+						script+="inputTextById(\""+res+"\", \""+value+"\");";
 						break;
 					case "text":
 						res=getRes("text");
-						script+=".findElementByText(\""+res+"\").sendKeys(\""+value+"\")";
+						script+="inputTextByText(\""+res+"\", \""+value+"\");";
 						break;
 					case "class":
 						res=getRes("class");
@@ -620,7 +660,7 @@ public class UiAutomatorView extends Composite {
 						script+=".findElementByXpath(\""+res+"\").sendKeys(\""+value+"\")";
 						break;					
 				}
-				System.out.println("script: " + script);
+				System.out.println("getScriptByValue script: " + script);
 				return script;
 			}
 			
@@ -637,6 +677,9 @@ public class UiAutomatorView extends Composite {
 		    			break;
 		    		case "Check":
 		    			ca="assert";
+		    			break;
+		    		case "Exist":
+		    			ca = "isExist";
 		    			break;
 		    	}
 		    	System.out.println("ca: " + ca);
