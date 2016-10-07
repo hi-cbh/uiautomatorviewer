@@ -166,14 +166,14 @@ public class UiAutomatorView extends Composite {
                 	mScreenshotCanvas.setMenu(menu);               	
                 	
                 	Menu menu1=new Menu(menu);
-                	Menu menu2=new Menu(menu);
+                	//Menu menu2=new Menu(menu);
                 	Menu menu3=new Menu(menu);
                 	Menu menu4=new Menu(menu);
                 	Menu menu5=new Menu(menu);
                 	Menu menu6=new Menu(menu);
-                	Menu menu7=new Menu(menu);
+                	//Menu menu7=new Menu(menu);
                 	Menu menu8=new Menu(menu);
-                	Menu menu9=new Menu(menu);
+                	//Menu menu9=new Menu(menu);
                 	Menu menu10 = new Menu(menu); // exist
                 	
                 	//set items
@@ -185,26 +185,26 @@ public class UiAutomatorView extends Composite {
                 	final MenuItem item6=new MenuItem(menu,SWT.CASCADE);
                 	final MenuItem item7=new MenuItem(menu,SWT.CASCADE);
                 	final MenuItem item8=new MenuItem(menu,SWT.CASCADE);
-                	final MenuItem item9=new MenuItem(menu,SWT.CASCADE);
+ //               	final MenuItem item9=new MenuItem(menu,SWT.CASCADE);
                 	final MenuItem item43=new MenuItem(menu,SWT.CASCADE);
                 	final MenuItem item49=new MenuItem(menu,SWT.CASCADE);
                 	
                 	
                 	final MenuItem item10=new MenuItem(menu1,SWT.NONE);
                 	final MenuItem item11=new MenuItem(menu1,SWT.NONE);
-                	final MenuItem item12=new MenuItem(menu1,SWT.NONE);
-                	final MenuItem item13=new MenuItem(menu1,SWT.NONE);
-                	final MenuItem item14=new MenuItem(menu1,SWT.NONE);
-                	final MenuItem item15=new MenuItem(menu2,SWT.NONE);
-                	final MenuItem item16=new MenuItem(menu2,SWT.NONE);
-                	final MenuItem item17=new MenuItem(menu2,SWT.NONE);
-                	final MenuItem item18=new MenuItem(menu2,SWT.NONE);
-                	final MenuItem item19=new MenuItem(menu2,SWT.NONE);
+//                	final MenuItem item12=new MenuItem(menu1,SWT.NONE);
+//                	final MenuItem item13=new MenuItem(menu1,SWT.NONE);
+//                	final MenuItem item14=new MenuItem(menu1,SWT.NONE);
+//                	final MenuItem item15=new MenuItem(menu2,SWT.NONE);
+//                	final MenuItem item16=new MenuItem(menu2,SWT.NONE);
+//                	final MenuItem item17=new MenuItem(menu2,SWT.NONE);
+//                	final MenuItem item18=new MenuItem(menu2,SWT.NONE);
+//                	final MenuItem item19=new MenuItem(menu2,SWT.NONE);
                 	final MenuItem item20=new MenuItem(menu3,SWT.NONE);
                 	final MenuItem item21=new MenuItem(menu3,SWT.NONE);
-                	final MenuItem item22=new MenuItem(menu3,SWT.NONE);
-                	final MenuItem item23=new MenuItem(menu3,SWT.NONE);
-                	final MenuItem item24=new MenuItem(menu3,SWT.NONE);
+//                	final MenuItem item22=new MenuItem(menu3,SWT.NONE);
+//                	final MenuItem item23=new MenuItem(menu3,SWT.NONE);
+//                	final MenuItem item24=new MenuItem(menu3,SWT.NONE);
                 	final MenuItem item25=new MenuItem(menu4,SWT.NONE);
                 	final MenuItem item26=new MenuItem(menu4,SWT.NONE);
                 	final MenuItem item27=new MenuItem(menu4,SWT.NONE);
@@ -215,47 +215,47 @@ public class UiAutomatorView extends Composite {
                 	final MenuItem item32=new MenuItem(menu6,SWT.NONE);
                 	final MenuItem item33=new MenuItem(menu5,SWT.NONE);
                 	final MenuItem item34=new MenuItem(menu5,SWT.NONE);
-                	final MenuItem item35=new MenuItem(menu5,SWT.NONE);
-                	final MenuItem item36=new MenuItem(menu5,SWT.NONE);
-                	final MenuItem item37=new MenuItem(menu5,SWT.NONE);
+//                	final MenuItem item35=new MenuItem(menu5,SWT.NONE);
+//                	final MenuItem item36=new MenuItem(menu5,SWT.NONE);
+//                	final MenuItem item37=new MenuItem(menu5,SWT.NONE);
                  	final MenuItem item38=new MenuItem(menu8,SWT.NONE);
                 	final MenuItem item39=new MenuItem(menu8,SWT.NONE);
-                	final MenuItem item40=new MenuItem(menu8,SWT.NONE);
-                	final MenuItem item41=new MenuItem(menu8,SWT.NONE);
-                	final MenuItem item42=new MenuItem(menu8,SWT.NONE);
+//                	final MenuItem item40=new MenuItem(menu8,SWT.NONE);
+//                	final MenuItem item41=new MenuItem(menu8,SWT.NONE);
+//                	final MenuItem item42=new MenuItem(menu8,SWT.NONE);
                 	final MenuItem item44=new MenuItem(menu6,SWT.NONE);
                 	final MenuItem item45=new MenuItem(menu10,SWT.NONE);
                 	final MenuItem item46=new MenuItem(menu10,SWT.NONE);
-                	final MenuItem item47=new MenuItem(menu10,SWT.NONE);
-                	final MenuItem item48=new MenuItem(menu10,SWT.NONE);
+//                	final MenuItem item47=new MenuItem(menu10,SWT.NONE);
+//                	final MenuItem item48=new MenuItem(menu10,SWT.NONE);
                 	
                 	
                 	//set item text
                 	item1.setText("Click");
                 	item2.setText("Click(Refresh)");
                 	item3.setText("longClick");
-                	item4.setText("longClick(Refresh)");
+                	item4.setText("LongClick(Refresh)");
                 	item5.setText("editText");
                 	item6.setText("SystemCommand");
                 	item7.setText("SystemCommand(Refresh)");
                 	item43.setText("Sleep");
                 	item8.setText("Check");
-                	item9.setText("Find");
+//                	item9.setText("Find");
                 	item10.setText("id");   // click
                 	item11.setText("text"); // click
-                	item12.setText("desc"); // click
-                	item13.setText("class");// click
-                	item14.setText("xpath");// click
-                	item15.setText("id");   //click(refresh)
-                	item16.setText("text"); //click(refresh)
-                	item17.setText("desc"); //click(refresh)
-                	item18.setText("class");//click(refresh)
-                	item19.setText("xpath");//click(refresh)
+//                	item12.setText("desc"); // click
+//                	item13.setText("class");// click
+//                	item14.setText("xpath");// click
+//                	item15.setText("id");   //click(refresh)
+//                	item16.setText("text"); //click(refresh)
+//                	item17.setText("desc"); //click(refresh)
+//                	item18.setText("class");//click(refresh)
+//                	item19.setText("xpath");//click(refresh)
                 	item20.setText("id");   //longclick
                 	item21.setText("text"); //longclick
-                	item22.setText("desc"); //longclick
-                	item23.setText("class");//longclick
-                	item24.setText("xpath");//longclick
+//                	item22.setText("desc"); //longclick
+//                	item23.setText("class");//longclick
+//                	item24.setText("xpath");//longclick
                 	item25.setText("id");
                 	item26.setText("text");
                 	item27.setText("desc");
@@ -266,19 +266,19 @@ public class UiAutomatorView extends Composite {
                 	item32.setText("Menu");//systemcommand
                 	item33.setText("id"); //edittext
                 	item34.setText("text");//edittext
-                	item35.setText("desc");//edittext
-                	item36.setText("class");//edittext
-                	item37.setText("xpath");//edittext
+//                	item35.setText("desc");//edittext
+//                	item36.setText("class");//edittext
+//                	item37.setText("xpath");//edittext
                 	item38.setText("id"); //Check
                 	item39.setText("text");//Check
-                	item40.setText("desc");//Check
-                	item41.setText("class");//Check
-                	item42.setText("xpath");//Check
+//                	item40.setText("desc");//Check
+//                	item41.setText("class");//Check
+//                	item42.setText("xpath");//Check
                 	item44.setText("Other");
                 	item45.setText("id"); //Exist
                 	item46.setText("text");//Exist
-                	item47.setText("desc");//Exist
-                	item48.setText("class");//Exist
+//                	item47.setText("desc");//Exist
+//                	item48.setText("class");//Exist
                 	item49.setText("Exist");//Exist
                 	
                 	//bind menu
@@ -300,7 +300,7 @@ public class UiAutomatorView extends Composite {
                 	item10.addSelectionListener(new SelectionAdapter(){
                 		@Override
                 		public void widgetSelected(SelectionEvent e){
-                			System.out.println("Id 添加侦听事件");
+                			//System.out.println("Id 添加侦听事件");
                 			String script=getScriptByAction(item10.getText(),item1.getText());
                 			chargeText(script);
                 			//scriptTextarea.setText(script);               			
@@ -310,33 +310,33 @@ public class UiAutomatorView extends Composite {
                 	item11.addSelectionListener(new SelectionAdapter(){
                 			@Override
 							public void widgetSelected(SelectionEvent e){
-                				System.out.println("Text 添加侦听事件");
+                				//System.out.println("Text 添加侦听事件");
                 				String script=getScriptByAction(item11.getText(),item1.getText());
                 				chargeText(script);
                     			
                 		}
                 	});
-                	item12.addSelectionListener(new SelectionAdapter(){
-            			@Override
-						public void widgetSelected(SelectionEvent e){
-            				String script=getScriptByAction(item12.getText(),item1.getText());
-            				chargeText(script);        			
-            			}
-                	});
-                	item13.addSelectionListener(new SelectionAdapter(){
-            			@Override
-						public void widgetSelected(SelectionEvent e){           				
-            				String script=getScriptByAction(item13.getText(),item1.getText());
-            				chargeText(script);            			
-            			}
-                	});
-                	item14.addSelectionListener(new SelectionAdapter(){
-            			@Override
-						public void widgetSelected(SelectionEvent e){
-            				String script=getScriptByAction(item14.getText(),item1.getText());
-            				chargeText(script);           			           			
-            			}
-                	});
+//                	item12.addSelectionListener(new SelectionAdapter(){
+//            			@Override
+//						public void widgetSelected(SelectionEvent e){
+//            				String script=getScriptByAction(item12.getText(),item1.getText());
+//            				chargeText(script);        			
+//            			}
+//                	});
+//                	item13.addSelectionListener(new SelectionAdapter(){
+//            			@Override
+//						public void widgetSelected(SelectionEvent e){           				
+//            				String script=getScriptByAction(item13.getText(),item1.getText());
+//            				chargeText(script);            			
+//            			}
+//                	});
+//                	item14.addSelectionListener(new SelectionAdapter(){
+//            			@Override
+//						public void widgetSelected(SelectionEvent e){
+//            				String script=getScriptByAction(item14.getText(),item1.getText());
+//            				chargeText(script);           			           			
+//            			}
+//                	});
                 	
                 	//click(refresh) item15-19
                 	
@@ -365,27 +365,27 @@ public class UiAutomatorView extends Composite {
             				chargeText(script);           			           			
             			}
                 	});
-                 	item22.addSelectionListener(new SelectionAdapter(){
-            			@Override
-						public void widgetSelected(SelectionEvent e){
-            				String script=getScriptByAction(item22.getText(),item3.getText());
-            				chargeText(script);           			           			
-            			}
-                	});
-                 	item23.addSelectionListener(new SelectionAdapter(){
-            			@Override
-						public void widgetSelected(SelectionEvent e){
-            				String script=getScriptByAction(item23.getText(),item3.getText());
-            				chargeText(script);           			           			
-            			}
-                	});
-                 	item24.addSelectionListener(new SelectionAdapter(){
-            			@Override
-						public void widgetSelected(SelectionEvent e){
-            				String script=getScriptByAction(item24.getText(),item3.getText());
-            				chargeText(script);           			           			
-            			}
-                	});
+//                 	item22.addSelectionListener(new SelectionAdapter(){
+//            			@Override
+//						public void widgetSelected(SelectionEvent e){
+//            				String script=getScriptByAction(item22.getText(),item3.getText());
+//            				chargeText(script);           			           			
+//            			}
+//                	});
+//                 	item23.addSelectionListener(new SelectionAdapter(){
+//            			@Override
+//						public void widgetSelected(SelectionEvent e){
+//            				String script=getScriptByAction(item23.getText(),item3.getText());
+//            				chargeText(script);           			           			
+//            			}
+//                	});
+//                 	item24.addSelectionListener(new SelectionAdapter(){
+//            			@Override
+//						public void widgetSelected(SelectionEvent e){
+//            				String script=getScriptByAction(item24.getText(),item3.getText());
+//            				chargeText(script);           			           			
+//            			}
+//                	});
                 	
                  	//longclick(refresh)
                  	item4.addSelectionListener(new SelectionAdapter(){
@@ -421,56 +421,68 @@ public class UiAutomatorView extends Composite {
                 			}               			             			
                 		}
                 	});
-                	item35.addSelectionListener(new SelectionAdapter(){
-                		@Override
-                		public void widgetSelected(SelectionEvent e){
-                			InputDialog dialog=new InputDialog(getShell(),"please input desc","please input",null,null);
-                			if(dialog.open()==InputDialog.OK){
-                				String script=getScriptByValue(item35.getText(),dialog.getValue());
-                				chargeText(script);
-                			}               			             			
-                		}
-                	});
-                	item36.addSelectionListener(new SelectionAdapter(){
-                		@Override
-                		public void widgetSelected(SelectionEvent e){
-                			InputDialog dialog=new InputDialog(getShell(),"please input class","please input",null,null);
-                			if(dialog.open()==InputDialog.OK){
-                				String script=getScriptByValue(item36.getText(),dialog.getValue());
-                				chargeText(script);
-                			}               			             			
-                		}
-                	});
-                	item37.addSelectionListener(new SelectionAdapter(){
-                		@Override
-                		public void widgetSelected(SelectionEvent e){
-                			InputDialog dialog=new InputDialog(getShell(),"please input xpath","please input",null,null);
-                			if(dialog.open()==InputDialog.OK){
-                				String script=getScriptByValue(item37.getText(),dialog.getValue());
-                				chargeText(script);
-                			}               			             			
-                		}
-                	});
+//                	item35.addSelectionListener(new SelectionAdapter(){
+//                		@Override
+//                		public void widgetSelected(SelectionEvent e){
+//                			InputDialog dialog=new InputDialog(getShell(),"please input desc","please input",null,null);
+//                			if(dialog.open()==InputDialog.OK){
+//                				String script=getScriptByValue(item35.getText(),dialog.getValue());
+//                				chargeText(script);
+//                			}               			             			
+//                		}
+//                	});
+//                	item36.addSelectionListener(new SelectionAdapter(){
+//                		@Override
+//                		public void widgetSelected(SelectionEvent e){
+//                			InputDialog dialog=new InputDialog(getShell(),"please input class","please input",null,null);
+//                			if(dialog.open()==InputDialog.OK){
+//                				String script=getScriptByValue(item36.getText(),dialog.getValue());
+//                				chargeText(script);
+//                			}               			             			
+//                		}
+//                	});
+//                	item37.addSelectionListener(new SelectionAdapter(){
+//                		@Override
+//                		public void widgetSelected(SelectionEvent e){
+//                			InputDialog dialog=new InputDialog(getShell(),"please input xpath","please input",null,null);
+//                			if(dialog.open()==InputDialog.OK){
+//                				String script=getScriptByValue(item37.getText(),dialog.getValue());
+//                				chargeText(script);
+//                			}               			             			
+//                		}
+//                	});
                 	//systemcommand
                 	item30.addSelectionListener(new SelectionAdapter(){
             			@Override
 						public void widgetSelected(SelectionEvent e){
-            				String script=getScriptByCommand(item30.getText(),"3");
+            				String script=getScriptByCommand(item30.getText(),"");
+            				//adb shell input keyevent KEYCODE_HOME
             				chargeText(script);
+            				UiAutomatorViewer window=UiAutomatorViewer.getInstance();
+            				ScreenshotAction screenshot=new ScreenshotAction(window, false);
+            				screenshot.run();
             			}
                 	});
                 	item31.addSelectionListener(new SelectionAdapter(){
             			@Override
 						public void widgetSelected(SelectionEvent e){
-            				String script=getScriptByCommand(item31.getText(),"4");
+            				String script=getScriptByCommand(item31.getText(),"");
+            				//adb shell input keyevent KEYCODE_BACK
             				chargeText(script);
+            				UiAutomatorViewer window=UiAutomatorViewer.getInstance();
+            				ScreenshotAction screenshot=new ScreenshotAction(window, false);
+            				screenshot.run();
             			}
                 	});
                 	item32.addSelectionListener(new SelectionAdapter(){
             			@Override
 						public void widgetSelected(SelectionEvent e){
-            				String script=getScriptByCommand(item32.getText(),"26");
+            				String script=getScriptByCommand(item32.getText(),"");
+            				//adb shell input keyevent KEYCODE_MENU
             				chargeText(script);
+            				UiAutomatorViewer window=UiAutomatorViewer.getInstance();
+            				ScreenshotAction screenshot=new ScreenshotAction(window, false);
+            				screenshot.run();
             			}
                 	});
                 	item44.addSelectionListener(new SelectionAdapter(){
@@ -519,7 +531,7 @@ public class UiAutomatorView extends Composite {
                 	item38.addSelectionListener(new SelectionAdapter(){
                 		@Override
                 		public void widgetSelected(SelectionEvent e){
-                			System.out.println("Id 添加侦听事件");
+                			//System.out.println("Id 添加侦听事件");
                 			String script=getScriptByAction(item38.getText(),item8.getText());
                 			chargeText(script);
                 			//scriptTextarea.setText(script);               			
@@ -530,7 +542,7 @@ public class UiAutomatorView extends Composite {
                 	item39.addSelectionListener(new SelectionAdapter(){
                 		@Override
                 		public void widgetSelected(SelectionEvent e){
-                			System.out.println("Text 添加侦听事件");
+                			//System.out.println("Text 添加侦听事件");
                 			String script=getScriptByAction(item39.getText(),item8.getText());
                 			chargeText(script);
                 			//scriptTextarea.setText(script);               			
@@ -543,7 +555,7 @@ public class UiAutomatorView extends Composite {
 
 						@Override
 						public void widgetSelected(SelectionEvent arg0) {
-							System.out.println("Id 添加侦听事件");
+							//System.out.println("Id 添加侦听事件");
                 			String script=getScriptByAction(item45.getText(),item49.getText());
                 			chargeText(script);
 						}
@@ -552,7 +564,7 @@ public class UiAutomatorView extends Composite {
                 	item46.addSelectionListener(new SelectionAdapter(){
                 		@Override
                 		public void widgetSelected(SelectionEvent e){
-                			System.out.println("Text 添加侦听事件");
+                			//System.out.println("Text 添加侦听事件");
                 			String script=getScriptByAction(item46.getText(),item49.getText());
                 			chargeText(script);
                 			//scriptTextarea.setText(script);               			
@@ -612,17 +624,18 @@ public class UiAutomatorView extends Composite {
 			
 			private String getScriptByCommand(String id,String value){
 				String script="";
+				String adbstr="";
 				switch(id){
 				case "Home":					
-					//script+=".sendKeys(\""+value+"\")";
+					adbstr="adb shell input keyevent KEYCODE_HOME";
 					script = "home();";
 					break;
 				case "Back":
-					//script+=".sendKeys(\""+value+"\")";
+					adbstr="adb shell input keyevent KEYCODE_BACK";
 					script = "back();";
 					break;
 				case "Menu":
-					//script+=".sendKeys(\""+value+"\")";
+					adbstr="adb shell input keyevent KEYCODE_MENU";
 					script = "menu();";
 					break;
 				case "Other":
@@ -630,6 +643,13 @@ public class UiAutomatorView extends Composite {
 					break;								
 			}
 				System.out.println("script: " + script);
+				try {
+					System.out.println("adb shell: " + adbstr);
+					Runtime.getRuntime().exec(adbstr);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			return script;
 			}
 			
@@ -660,7 +680,7 @@ public class UiAutomatorView extends Composite {
 						script+=".findElementByXpath(\""+res+"\").sendKeys(\""+value+"\")";
 						break;					
 				}
-				System.out.println("getScriptByValue script: " + script);
+				//System.out.println("getScriptByValue script: " + script);
 				return script;
 			}
 			
@@ -687,12 +707,15 @@ public class UiAutomatorView extends Composite {
 		    }
 			private void chargeText(String res){
 				if(scriptTextarea.getText().isEmpty()){
-					System.out.println("isEmpty");
+					//System.out.println("isEmpty");
 					//追加到脚本文本区域
 					scriptTextarea.append(res);
+					
 				}
 				else{
-					System.out.println("not Empty");
+					//System.out.println("not Empty");
+					//添加换行
+					scriptTextarea.append(System.getProperty("line.separator"));
 					scriptTextarea.append(System.getProperty("line.separator")+res);
 				}
 			}
@@ -704,14 +727,17 @@ public class UiAutomatorView extends Composite {
 						adbStr="adb shell input tap "+(rect.x+rect.width/2)+" "+(rect.y+rect.height/2);
 						break;
 					case "LongClick(Refresh)":
-						adbStr="adb shell input tap "+(rect.x+rect.width/2)+" "+(rect.y+rect.height/2);
+						adbStr="adb shell input touchscreen swipe "+(rect.x+rect.width/2)+" "+(rect.y+rect.height/2) 
+								 +" "+(rect.x+rect.width/2+1)+" "+(rect.y+rect.height/2+1) 
+								 + " "+ 3000;
+						//adbStr="adb shell input tap "+(rect.x+rect.width/2)+" "+(rect.y+rect.height/2);
 						break;
 					case "SystemCommand(Refresh)":
 						adbStr="adb shell input keyevent "+value+"";
 						break;
 				}							
 				try {
-					System.out.println(adbStr);
+					System.out.println("adb shell: " + adbStr);
 					Runtime.getRuntime().exec(adbStr);
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
